@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARDIANS PRODUCTION | HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">ARDIANS PRODUCTION</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO / HOME -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="Profile.jpg" alt="Foto Profil" class="profile-img">
+            <h1>ARDIANS PRODUCTION</h1>
+            <p class="tagline">Personal Website • Creative • Professional</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <p>
+            Ardians Production berdiri karena visi misi yang selaras dengan kebutuhan masyarakat.
+            Website ini berisi informasi dan layanan yang di sediakan.
+            Berfokus pada Pelayanan, profesionalitas, serta Kreatifitas yang modern dan relevan.
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+<section id="services" class="services">
+    <h2>Service</h2>
+    <div class="service-container">
+
+        <a href="layanan.html" class="service-card">
+            <h3>AP Films</h3>
+            <p>Produksi dan pengembangan film pendek dengan pendekatan sinematik, emosional, dan terkonsep.</p>
+        </a>
+
+        <a href="layanan2.html" class="service-card under-dev">
+            <h3>AP VG</h3>
+            <p>Layanan videografi untuk promosi, wedding, yearbook, dan dokumentasi dengan hasil visual profesional dan terkonsep.</p>
+        </a>
+
+        <a href="layanan3.html" class="service-card">
+            <h3>AP Tour</h3>
+            <p>Layanan tour leader dengan komunikasi yang baik, ramah, dan mengutamakan kenyamanan serta pelayanan peserta.</p>
+        </a>
+
+        <a href="layanan4.html" class="service-card under-dev">
+            <h3>AP Wisata</h3>
+            <p>Penyedia layanan bus pariwisata yang nyaman, aman, dan terpercaya untuk berbagai kebutuhan perjalanan.</p>
+        </a>
+
+        <a href="layanan5.html" class="service-card">
+            <h3>AP Script</h3>
+            <p>Penulisan script film pendek dengan struktur kuat, karakter hidup, dan konflik yang terarah.</p>
+        </a>
+
+        <a href="layanan6.html" class="service-card under-dev">
+            <h3>AP Law</h3>
+            <p>Pendampingan awal konsultasi hukum dan penghubung ke pengacara profesional sesuai kebutuhan kasus.</p>
+        </a>
+    </div>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: wildanardians580@gmail.com</p>
+        <p>Instagram: @wildan_ardnsyh</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 ARDIANS PRODUCTION. All Rights Reserved.</p>
+    </footer>
+<script>
+  // Mengambil semua elemen yang memiliki class 'under-dev'
+  const devCards = document.querySelectorAll('.under-dev');
+
+  devCards.forEach(card => {
+    card.addEventListener('click', function(e) {
+      e.preventDefault(); // Menghentikan link agar tidak pindah halaman
+      
+      // Memunculkan Pop-up SweetAlert2
+      Swal.fire({
+        title: 'Sedang Dalam Pengembangan',
+        text: 'Mohon maaf, fitur saat ini belum tersedia.',
+        icon: 'info',
+        confirmButtonText: 'Tutup',
+        confirmButtonColor: '#007bff' // Sesuaikan warna dengan tema kamu
+      });
+    });
+  });
+</script>
+</body>
+</html>
